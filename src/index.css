@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Space colors */
+  --color-space-900: #0a0e1a;
+  --color-space-800: #0f1520;
+  --color-space-700: #1a1f35;
+  --color-space-600: #252d4a;
+
+  /* Cosmic colors */
+  --color-cosmic-blue: #4A90E2;
+  --color-cosmic-purple: #9B59B6;
+  --color-cosmic-pink: #E91E63;
+  --color-cosmic-gold: #FFD700;
+
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+body {
+  background-color: var(--color-space-900);
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
