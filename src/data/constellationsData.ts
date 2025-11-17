@@ -196,10 +196,10 @@ export const constellations: Constellation[] = [
     name: 'Cruz del Sur',
     nameEnglish: 'Crux',
     stars: [
-      { x: 72, y: 65, brightness: 1.4 }, // Acrux
-      { x: 75, y: 60, brightness: 1.3 }, // Mimosa
-      { x: 78, y: 65, brightness: 1.2 },
-      { x: 75, y: 70, brightness: 1.2 },
+      { x: 60, y: 50, brightness: 1.4 }, // Acrux
+      { x: 63, y: 45, brightness: 1.3 }, // Mimosa
+      { x: 66, y: 50, brightness: 1.2 },
+      { x: 63, y: 55, brightness: 1.2 },
     ],
     connections: [[0, 2], [1, 3]],
     mainStars: [0, 1],
