@@ -1,73 +1,136 @@
-# React + TypeScript + Vite
+# Enciclopedia Virtual Animada
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una enciclopedia interactiva que combina visualizaciones 3D del universo con anatomía humana animada, creada con React, Three.js y Framer Motion.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Sistema Solar Interactivo (Completado)
+- Visualización 3D completa del sistema solar
+- 8 planetas con texturas realistas y colores distintivos
+- Sol con iluminación y efecto de brillo pulsante
+- Órbitas circulares visibles para cada planeta
+- Rotación realista de cada planeta sobre su eje
+- Anillos de Saturno animados
+- Controles de cámara 3D (rotación, zoom, paneo)
+- Sistema de información detallada al hacer clic en planetas/sol
+- Controles de velocidad (0.1x a 10x)
+- Pausa/reproducción
+- Botón de reinicio
+- Campo estelar de fondo animado
 
-## React Compiler
+### Próximamente
+- Fases Lunares Animadas
+- Constelaciones Interactivas
+- Atlas del Cuerpo Humano:
+  - Sistema Nervioso
+  - Sistema Circulatorio
+  - Sistema Respiratorio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- **React 18** - Framework principal
+- **TypeScript** - Tipado estático
+- **Vite** - Build tool ultrarrápido
+- **Tailwind CSS v4** - Estilos con tema personalizado
+- **Three.js** - Motor 3D
+- **React Three Fiber** - React renderer para Three.js
+- **@react-three/drei** - Helpers para R3F
+- **Framer Motion** - Animaciones 2D
+- **React Router** - Navegación
+- **React Icons** - Iconografía
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Instalación
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Clonar el repositorio
+git clone <repository-url>
+cd enciclopedia-virtual
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Instalar dependencias
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Build para producción
+npm run build
+
+# Preview del build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Estructura del Proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/
+│   ├── common/              # Componentes compartidos
+│   │   ├── Layout.tsx
+│   │   ├── PlanetInfoCard.tsx
+│   │   └── SolarSystemControls.tsx
+│   ├── navigation/          # Navegación
+│   │   └── Navbar.tsx
+│   └── animations/          # Componentes 3D y animados
+│       ├── SolarSystemScene.tsx
+│       ├── Sun.tsx
+│       └── Planet.tsx
+├── pages/                   # Páginas de la aplicación
+│   ├── Home.tsx
+│   ├── SistemaSolar.tsx
+│   ├── FasesLunares.tsx
+│   ├── Constelaciones.tsx
+│   └── CuerpoHumano/
+│       ├── index.tsx
+│       ├── SistemaNervioso.tsx
+│       ├── SistemaCirculatorio.tsx
+│       └── SistemaRespiratorio.tsx
+├── data/                    # Datos de planetas, etc.
+│   └── planetsData.ts
+└── utils/                   # Utilidades
+```
+
+## Controles del Sistema Solar
+
+- **Clic derecho + Arrastrar**: Rotar cámara
+- **Scroll**: Zoom in/out
+- **Clic izquierdo en planeta/sol**: Ver información detallada
+- **Botones de control**:
+  - Play/Pausa: Pausar animación
+  - +/- : Ajustar velocidad de órbita
+  - Reset: Reiniciar vista y configuración
+
+## Progreso del Desarrollo
+
+- [x] **Fase 1**: Setup inicial del proyecto
+- [x] **Fase 2**: Sistema Solar Interactivo 3D
+- [ ] **Fase 3**: Fases Lunares Animadas
+- [ ] **Fase 4**: Constelaciones Animadas
+- [ ] **Fase 5**: Sistema Nervioso
+- [ ] **Fase 6**: Sistema Circulatorio
+- [ ] **Fase 7**: Sistema Respiratorio
+- [ ] **Fase 8**: Integración y Pulido Final
+
+Ver [PLAN.md](./PLAN.md) para detalles completos del plan de trabajo.
+
+## Datos de los Planetas
+
+El sistema incluye información detallada de todos los planetas:
+- Mercurio, Venus, Tierra, Marte (Planetas rocosos)
+- Júpiter, Saturno (Gigantes gaseosos)
+- Urano, Neptuno (Gigantes de hielo)
+
+Cada planeta incluye:
+- Diámetro
+- Distancia al Sol
+- Período orbital
+- Duración del día
+- Temperatura
+- Número de lunas
+
+## Licencia
+
+MIT
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cambios mayores.
