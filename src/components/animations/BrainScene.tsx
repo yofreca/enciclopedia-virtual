@@ -133,7 +133,7 @@ const BrainScene = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7 }}
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-space-800/70 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-2xl z-10"
+        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-space-800/70 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-2xl z-0"
       >
         <h3 className="text-sm font-bold mb-3 text-cosmic-purple text-center">
           {neuralActivity.name}

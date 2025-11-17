@@ -274,11 +274,8 @@ const BrainViewer = ({ onRegionClick, selectedRegion }: BrainViewerProps) => {
           />
         ))}
 
-        {/* Etiquetas */}
-        <text x="250" y="30" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">
-          Anatomía del Cerebro
-        </text>
-        <text x="250" y="50" textAnchor="middle" fill="#888" fontSize="12">
+        {/* Etiqueta de vista */}
+        <text x="250" y="30" textAnchor="middle" fill="#888" fontSize="12">
           Vista lateral (hemisferio izquierdo)
         </text>
       </svg>
