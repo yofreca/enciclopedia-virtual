@@ -5,11 +5,18 @@ import { FaBrain, FaHeartbeat, FaLungs } from 'react-icons/fa';
 const CuerpoHumano = () => {
   const sistemas = [
     {
+      title: 'Anatomía del Cerebro',
+      icon: <FaBrain className="text-5xl mb-3" />,
+      path: '/cuerpo-humano/cerebro',
+      gradient: 'from-pink-500 to-purple-600',
+      description: 'Descubre los lóbulos cerebrales'
+    },
+    {
       title: 'Sistema Nervioso',
       icon: <FaBrain className="text-5xl mb-3" />,
       path: '/cuerpo-humano/nervioso',
       gradient: 'from-purple-500 to-indigo-600',
-      description: 'Explora el cerebro y las neuronas'
+      description: 'Explora neuronas y sinapsis'
     },
     {
       title: 'Sistema Circulatorio',
@@ -43,7 +50,7 @@ const CuerpoHumano = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl">
         {sistemas.map((sistema, index) => (
           <motion.div
             key={sistema.path}
