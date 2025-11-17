@@ -77,11 +77,11 @@ export const constellations: Constellation[] = [
     name: 'Casiopea',
     nameEnglish: 'Cassiopeia',
     stars: [
-      { x: 70, y: 20, brightness: 1.2 },
-      { x: 72, y: 25, brightness: 1.3 },
-      { x: 75, y: 22, brightness: 1.2 },
-      { x: 78, y: 27, brightness: 1.2 },
-      { x: 80, y: 23, brightness: 1.1 },
+      { x: 60, y: 20, brightness: 1.2 },
+      { x: 62, y: 25, brightness: 1.3 },
+      { x: 65, y: 22, brightness: 1.2 },
+      { x: 68, y: 27, brightness: 1.2 },
+      { x: 70, y: 23, brightness: 1.1 },
     ],
     connections: [[0, 1], [1, 2], [2, 3], [3, 4]],
     mainStars: [1, 2],
@@ -196,10 +196,10 @@ export const constellations: Constellation[] = [
     name: 'Cruz del Sur',
     nameEnglish: 'Crux',
     stars: [
-      { x: 82, y: 65, brightness: 1.4 }, // Acrux
-      { x: 85, y: 60, brightness: 1.3 }, // Mimosa
-      { x: 88, y: 65, brightness: 1.2 },
-      { x: 85, y: 70, brightness: 1.2 },
+      { x: 72, y: 65, brightness: 1.4 }, // Acrux
+      { x: 75, y: 60, brightness: 1.3 }, // Mimosa
+      { x: 78, y: 65, brightness: 1.2 },
+      { x: 75, y: 70, brightness: 1.2 },
     ],
     connections: [[0, 2], [1, 3]],
     mainStars: [0, 1],
