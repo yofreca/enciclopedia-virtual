@@ -15,7 +15,7 @@ const BrainInfo = ({ region }: BrainInfoProps) => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.3 }}
-          className="fixed top-20 right-8 max-w-md z-10"
+          className="fixed top-20 right-8 max-w-md z-30"
         >
           <div className="bg-space-800/80 backdrop-blur-md border border-white/20 rounded-xl p-5 shadow-2xl max-h-[calc(100vh-120px)] overflow-y-auto">
             {/* Header con color de la región */}
