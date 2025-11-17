@@ -32,8 +32,30 @@ Una enciclopedia interactiva que combina visualizaciones 3D del universo con ana
 - Barra de progreso del ciclo
 - Diseño responsivo
 
+### Constelaciones Animadas (Completado)
+- Cielo estrellado con 200 estrellas de fondo parpadeantes
+- 8 constelaciones principales implementadas:
+  * Osa Mayor (Ursa Major)
+  * Orión (Orion)
+  * Casiopea (Cassiopeia)
+  * Osa Menor (Ursa Minor) - con Polaris
+  * Leo
+  * Escorpio (Scorpius) - con Antares
+  * Cisne (Cygnus) - Cruz del Norte
+  * Cruz del Sur (Crux)
+- Animación de líneas conectando estrellas (efecto de dibujo)
+- Estrellas principales destacadas en color dorado con destellos
+- Selector superior de constelaciones
+- Panel lateral con información completa:
+  * Mitología griega de cada constelación
+  * Mejor época de observación
+  * Hemisferio visible
+  * Datos curiosos y científicos
+- Efectos de hover sobre estrellas individuales
+- Gradientes y filtros SVG para efectos de brillo
+- Nombre de constelación centrado con efecto de texto gradiente
+
 ### Próximamente
-- Constelaciones Interactivas
 - Atlas del Cuerpo Humano:
   - Sistema Nervioso
   - Sistema Circulatorio
@@ -123,12 +145,23 @@ src/
 - **Panel lateral**: Información detallada de la fase actual
 - **Animación automática**: Cambia de fase cada 3 segundos (ajustable)
 
+## Controles de Constelaciones
+
+- **Selector superior**: Clic en cualquier constelación para visualizarla
+- **Estrellas interactivas**: Pasa el cursor sobre las estrellas para resaltarlas
+- **Panel derecho**: Información mitológica, científica y datos curiosos
+- **Visualización**:
+  - Estrellas doradas: Estrellas principales de la constelación
+  - Líneas animadas: Se dibujan progresivamente al seleccionar
+  - Destellos: Las estrellas principales tienen efectos de destello
+- **Fondo**: 200 estrellas animadas con efecto de parpadeo
+
 ## Progreso del Desarrollo
 
 - [x] **Fase 1**: Setup inicial del proyecto
 - [x] **Fase 2**: Sistema Solar Interactivo 3D
 - [x] **Fase 3**: Fases Lunares Animadas
-- [ ] **Fase 4**: Constelaciones Animadas
+- [x] **Fase 4**: Constelaciones Animadas
 - [ ] **Fase 5**: Sistema Nervioso
 - [ ] **Fase 6**: Sistema Circulatorio
 - [ ] **Fase 7**: Sistema Respiratorio
