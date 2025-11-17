@@ -18,8 +18,21 @@ Una enciclopedia interactiva que combina visualizaciones 3D del universo con ana
 - Botón de reinicio
 - Campo estelar de fondo animado
 
+### Fases Lunares Animadas (Completado)
+- Visualización SVG de la Luna con textura de cráteres
+- 8 fases lunares completas (Nueva, Creciente, Cuarto Creciente, Gibosa Creciente, Llena, Gibosa Menguante, Cuarto Menguante, Menguante)
+- Animación automática del ciclo lunar completo
+- Timeline interactiva con miniatura de cada fase
+- Selección manual de cualquier fase
+- Efectos de iluminación y brillo realistas
+- Panel lateral con información detallada de cada fase
+- Datos científicos de la Luna
+- Controles avanzados (Play/Pausa, velocidad, navegación fase por fase)
+- Transiciones suaves entre fases
+- Barra de progreso del ciclo
+- Diseño responsivo
+
 ### Próximamente
-- Fases Lunares Animadas
 - Constelaciones Interactivas
 - Atlas del Cuerpo Humano:
   - Sistema Nervioso
@@ -99,11 +112,22 @@ src/
   - +/- : Ajustar velocidad de órbita
   - Reset: Reiniciar vista y configuración
 
+## Controles de Fases Lunares
+
+- **Timeline superior**: Clic en cualquier fase para saltar directamente
+- **Botones de navegación**: Anterior/Siguiente para cambiar fase manualmente
+- **Botones de control**:
+  - Play/Pausa: Pausar ciclo automático
+  - +/- : Ajustar velocidad del ciclo (0.1x a 5x)
+  - Reset: Volver a Luna Nueva
+- **Panel lateral**: Información detallada de la fase actual
+- **Animación automática**: Cambia de fase cada 3 segundos (ajustable)
+
 ## Progreso del Desarrollo
 
 - [x] **Fase 1**: Setup inicial del proyecto
 - [x] **Fase 2**: Sistema Solar Interactivo 3D
-- [ ] **Fase 3**: Fases Lunares Animadas
+- [x] **Fase 3**: Fases Lunares Animadas
 - [ ] **Fase 4**: Constelaciones Animadas
 - [ ] **Fase 5**: Sistema Nervioso
 - [ ] **Fase 6**: Sistema Circulatorio
