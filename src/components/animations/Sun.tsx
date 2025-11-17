@@ -26,8 +26,8 @@ const Sun = ({ onClick }: SunProps) => {
   return (
     <group>
       {/* Luz del sol */}
-      <pointLight position={[0, 0, 0]} intensity={2} distance={300} color="#FDB813" />
-      <ambientLight intensity={0.1} />
+      <pointLight position={[0, 0, 0]} intensity={4} distance={400} color="#FDB813" />
+      <ambientLight intensity={0.5} />
 
       {/* Glow exterior */}
       <mesh ref={glowRef} onClick={onClick}>
