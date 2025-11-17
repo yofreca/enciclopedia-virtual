@@ -111,7 +111,7 @@ const MoonPhasesScene = () => {
       />
 
       {/* Luna central */}
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen pb-24">
         <motion.div
           key={currentPhaseIndex}
           initial={{ scale: 0.8, opacity: 0, rotateY: -180 }}
