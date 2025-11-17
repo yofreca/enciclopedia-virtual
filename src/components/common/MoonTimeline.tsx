@@ -10,13 +10,13 @@ interface MoonTimelineProps {
 const MoonTimeline = ({ currentPhase, onPhaseSelect }: MoonTimelineProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.3 }}
-      className="fixed top-20 left-1/2 transform -translate-x-1/2 w-full max-w-4xl px-4 z-10"
+      className="fixed top-20 left-8 max-w-md z-10"
     >
       <div className="bg-space-800/70 backdrop-blur-md border border-white/20 rounded-xl p-2 shadow-2xl">
-        <div className="grid grid-cols-4 md:grid-cols-8 gap-1.5">
+        <div className="grid grid-cols-2 gap-1.5">
           {moonPhases.map((phase, index) => (
             <motion.button
               key={phase.id}
